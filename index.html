@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Sidebar App</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Sidebar CSS -->
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div id="sb-sidebar" class="sb-sidebar"></div>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div id="sb-menu-icon"></div>
+                <a class="navbar-brand" href="#">Sidebar</a>
+            </nav>
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <script src="./js/sidebar.js"></script>
+
+    <script>
+        var sb = new SideBar({
+            title: "Sidebar",
+            items: [
+                { id: 0, text: "Home", link: "#" },
+                { id: 1, text: "Settings", link: "#/Settings" },
+            ]
+        });
+    </script>
+
+</body>
+</html>

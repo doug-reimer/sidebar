@@ -1,2 +1,2 @@
 # sidebar
-Menu Pullout Sidebar
+Example of an animated Menu Pullout Sidebar
